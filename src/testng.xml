@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Register-Authorize">
+    <test name="Registration in Chrome">
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="RegistrationTest"/>
+        </classes>
+    </test>
+    <test name="Registration in Firefox">
+        <parameter name="browserName" value="firefox"/>
+        <classes>
+            <class name="RegistrationTest"/>
+        </classes>
+    </test>
+    <test name="Authorization in Chrome">
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="AuthorizationTest"/>
+        </classes>
+    </test>
+    <test name="Authorization in Firefox">
+        <parameter name="browserName" value="firefox"/>
+        <classes>
+            <class name="AuthorizationTest"/>
+        </classes>
+    </test>
+
+</suite>
