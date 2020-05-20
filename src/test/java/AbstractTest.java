@@ -33,6 +33,7 @@ abstract class AbstractTest {
         driver.get(BASE_URL);
     }
 
+
     @AfterTest(description = "Close browser")
     public void tearDown() {
         if (driver != null)
